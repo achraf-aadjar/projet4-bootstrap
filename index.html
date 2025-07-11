@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Beam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="firstcont">
+            <div class="navcontainer">
+
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+                <nav class="main-nav">
+                    <img src="assets/logo.svg" alt="Logo" width="50px" class="iconaad">
+
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Téléchargements</a></li>
+                        <li><a href="#">DEX</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Ressources</a></li>
+                    </ul>
+
+                    <div class="langue-selecteur">
+                        <select aria-label="Sélecteur de langue">
+                            <option value="fr">🇫🇷 Français</option>
+                            <option value="en">🇬🇧 English</option>
+                            <option value="de">🇩🇪 Deutsch</option>
+                            <option value="es">🇪🇸 Español</option>
+                            <option value="he">🇮🇱 Hebrew</option>
+                            <option value="ja">🇯🇵 日本語</option>
+                            <option value="ru">🇷🇺 Русский</option>
+                            <option value="zh">🇨🇳 中文</option>
+                            <option value="ar">🇸🇦 العربية</option>
+                        </select>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="titlecontainer">
+                <h1 class="title1">Confidentialité Sans Compromis</h1>
+            </div>
+
+            <div class="secondtext">
+                <p class="para1">
+                    Beam est la première blockchain de confidentialité Mimblewimble L1, dissimulant complètement les
+                    transactions.
+                    Téléchargez le portefeuille Beam pour l'expérience DeFi confidentielle ultime.
+                </p>
+                <div class="but">
+                    <button class="lancez-vous">
+                        <span class="icon"><svg class="iconaad32" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 32 32">
+                                <path fill="currentColor"
+                                    d="M31.2 2c0-.7-.5-1.2-1.1-1.2-6.3-.3-11.8 2.3-16.7 8H4c-.6 0-1 .3-1.2.9l-2 8v.3c0 .7.5 1.3 1.2 1.3h4.5l-.6 1.2-.2.5c0 .3.2.7.4.9l4 4a1.2 1.2 0 0 0 1.5.2l1.1-.6v4.7c0 .6.6 1.2 1.3 1.2h.3l8-2c.6-.2 1-.7 1-1.2v-9.4c5-4.3 8.5-9.6 8-16.9zM3.6 16.7 5 11.2h6.3A50.6 50.6 0 0 0 8 16.6l-.2.3zm17.1 10.4-5.4 1.4v-4.4c2.1-1.2 4-2.4 5.6-3.6l-.1.1zm-9.5-3.7-2.7-2.8C14.3 9.3 21 3.4 28.8 3.3c0 9.2-7 14.8-17.6 20.3zM23 5.7A3.2 3.2 0 1 0 26.3 9c0-1.8-1.5-3.2-3.3-3.3zm0 4a.8.8 0 1 1 .8-.7c0 .4-.4.8-.8.8z">
+                                </path>
+                            </svg></span> Lancez-vous
+                    </button>
+                    <button class="tlp">
+                        <span class="icon"><svg class="iconaad323" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="75 50 315 280">
+                                <polygon fill="transparent" stroke="currentColor" stroke-width="15"
+                                    points="230 56 80 324 380 324" class="triangle">
+                                    <animate attributeName="points" dur="8s" repeatCount="indefinite"
+                                        keyTimes="0; 0.25; 0.875; 0.876; 1"
+                                        values="230,56 80,324 380,324; 230,56 80,324 380,324; 230,56 80,324 380,324; 230,56 80,324 380,324; 230,56 80,324 380,324">
+                                    </animate>
+                                </polygon>
+                                <polygon fill="transparent" stroke="currentColor" stroke-width="15"
+                                    points="230 149.3334 158 277.3334 302 277.3334">
+                                    <animate attributeName="points" dur="6s" repeatCount="indefinite"
+                                        keyTimes="0; 0.25;  0.75; 0.76; 1"
+                                        values="230,149.3334 158,277.3334 302,277.3334; 230,149.3334 158,277.3334 302,277.3334; 230,56 80,324 380,324; 230,202.333 187,270.333 273,270.333; 230,149.3334 158,277.3334 302,277.3334">
+                                    </animate>
+                                    <animate attributeName="stroke-opacity" dur="6s" repeatCount="indefinite"
+                                        keyTimes="0; 0.25;  0.75; 0.76; 1" values="1; 1; 0; 0; 1"></animate>
+                                </polygon>
+                            </svg></span> Télécharger Le Portefeuille
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="TOUT">
+        <div class="big">
+            <h1 class="Title">Fonctionnalités</h1>
+            <div class="fonction">
+
+                <div class="box1 box">
+                    <img src="assets/private.svg" alt="image" style="width: 45px;height: 45px;">
+                    <h1 class="title">Confidentialité ultime</h1>
+                    <p>Choisissez des transactions de confidentialité </p>
+                    <p>standard pour un anonymat robuste
+                        ou des </p>
+                    <p>transactions de confidentialité maximale avec
+                        un</p>
+                    <p> ensemble d'anonymat
+                        de 64k – la confidentialité</p>
+                    <p> est par défaut pour tous.</p>
+                    <button class="bouton">En savoir plus <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="box2 box">
+                    <img src="assets/ca.svg" alt="image" style="width: 45px;height: 45px;">
+                    <h1 class="title"> Actifs confidentiels</h1>
+                    <p>Pontez, créez, effectuez des transactions</p>
+                    <p>et échangez des actifs sur la blockchain Beam en </p>
+                    <p>utilisant votre portefeuille. Les transactions</p>
+                    <p>d'actifs sont indiscernables des transactions </p>
+                    <p>Beam régulières.</p>
+                    <button class="bouton">En savoir plus <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="box3 box">
+                    <img src="assets/defi.svg" alt="image" style="width: 45px;height: 45px;">
+                    <h1 class="title">DeFi & NFTs confidentiels</h1>
+                    <p>La blockchain Beam prend en charge les </p>
+                    <p>stablecoins privées, les NFTs, les AMMs et les </p>
+                    <p>développements futurs tels que les prêts, les</p>
+                    <p>oracles, les sidechains, les actifs encapsulés et </p>
+                    <p>plus encore.</p>
+                    <button class="bouton">En savoir plus <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="box4 box">
+                    <img src="assets/atomic-dex.svg" alt="image" style="width: 45px;height: 45px;">
+                    <h1 class="title">DEX confidentiel</h1>
+                    <p>Un AMM puissant, similaire à Uniswap, pour </p>
+                    <p>Beam et ses actifs confidentiels et pontés. </p>
+                    <p>Échanges confidentiels et swaps atomiques pour </p>
+                    <p>des actifs tels que BTC, LTC, QTUM, DASH et</p>
+                    <p>DOGE.</p>
+                    <button class="bouton">En savoir plus <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="box5 box">
+                    <img src="assets/shaders.svg" alt="image" style="width: 45px;height: 45px;">
+                    <h1 class="title">Contrats intelligents confidentiels</h1>
+                    <p>La Beam Virtual Machine permet l'exécution de </p>
+                    <p>dApps confidentiels en utilisant WASM. Les </p>
+                    <p>shaders de contrats gèrent la logique métier,</p>
+                    <p>tandis que les shaders d'application gèrent les </p>
+                    <p>couches de présentation pour une intégration </p>
+                    <p>facile dans le portefeuille.</p>
+                    <button class="bouton">En savoir plus <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="box6 box">
+                    <img src="assets/usability.svg" alt="image" style="width: 45px;height: 45px;">
+                    <h1 class="title">Expérience utilisateur exceptionnelle</h1>
+                    <p>Portefeuilles Beam conviviaux pour mobile et</p>
+                    <p>bureau au design épuré. Deux types de </p>
+                    <p>transactions: communication de portefeuille</p>
+                    <p>interactive et transactions simples d'envoi et </p>
+                    <p>d'oubli similaires à Bitcoin.</p>
+                    <button class="bouton">En savoir plus <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="grand">
+            <div class="big2">
+                <h1 class="Title part2">Lancez-Vous</h1>
+                <div class="lancez">
+                    <div class="boxa box">
+                        <svg class="svg1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 1 18 22">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 8v8.8c0 1.1 0 1.7.2 2.1.2.4.5.7.9.9.4.2 1 .2 2.1.2h9.6c1.1 0 1.7 0 2.1-.2.4-.2.7-.5.9-.9.2-.4.2-1 .2-2.1V8M4 8h16M4 8l1.4-2.4c.3-.6.5-.9.7-1 .2-.3.5-.4.7-.5L8.1 4H16l1.3.1.7.4.7 1.1L20 8m-8 3v6m0 0 3-2m-3 2-3-2">
+                            </path>
+                        </svg>
+                        <h1 class="titre1">Installer Beam Wallet</h1>
+                        <p>Créez un portefeuille pour des transactions </p>
+                        <p>faciles avec BEAM et des actifs confidentiels.</p>
+                        <button>
+                            <div><svg class="svg4" xmlns="http://www.w3.org/2000/svg" viewBox="75 50 315 280">
+                                    <polygon fill="transparent" stroke="currentColor" stroke-width="15"
+                                        points="230 56 80 324 380 324" class="triangle">
+                                        <animate attributeName="points" dur="8s" repeatCount="indefinite"
+                                            keyTimes="0; 0.25; 0.875; 0.876; 1"
+                                            values="230,56 80,324 380,324; 230,56 80,324 380,324; 230,56 80,324 380,324; 230,56 80,324 380,324; 230,56 80,324 380,324">
+                                        </animate>
+                                    </polygon>
+                                    <polygon fill="transparent" stroke="currentColor" stroke-width="15"
+                                        points="230 149.3334 158 277.3334 302 277.3334">
+                                        <animate attributeName="points" dur="6s" repeatCount="indefinite"
+                                            keyTimes="0; 0.25;  0.75; 0.76; 1"
+                                            values="230,149.3334 158,277.3334 302,277.3334; 230,149.3334 158,277.3334 302,277.3334; 230,56 80,324 380,324; 230,202.333 187,270.333 273,270.333; 230,149.3334 158,277.3334 302,277.3334">
+                                        </animate>
+                                        <animate attributeName="stroke-opacity" dur="6s" repeatCount="indefinite"
+                                            keyTimes="0; 0.25;  0.75; 0.76; 1" values="1; 1; 0; 0; 1"></animate>
+                                    </polygon>
+                                </svg>Télécharger Beam Wallet</div>
+                        </button>
+                    </div>
+                    <div class="boxb box">
+                        <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                            <defs>
+                                <radialGradient id="a" cx="0%" cy="0%" r="0%" fx="0%" fy="0%">
+                                    <stop offset="0%" stop-color="#008471"></stop>
+                                    <stop offset="100%" stop-color="#103051"></stop>
+                                </radialGradient>
+                            </defs>
+                            <g fill="none" transform="translate(1 1)">
+                                <circle cx="10" cy="10" r="10" fill="url(#a)" stroke="#00F6D2" stroke-width="2">
+                                </circle>
+                                <g fill="#FFF">
+                                    <path d="M10 12.4h2.9l-2.9-5v-3l5.7 9.8H10v-1.8zm0 0H7.2l2.8-5v-3l-5.6 9.8H10z">
+                                    </path>
+                                    <path d="M10 8.7v3.2H8.2L10 8.7Zm0 0v3.2h1.8L10 8.7Z"></path>
+                                    <path d="m10.4 10-6-2.7v3h6z"></path>
+                                    <path d="m10.4 10 6-2.7v3h-6z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <h1 class="titre2">Obtenir des BEAM</h1>
+                        <p>Miner ou acheter des BEAM sur des plateformes </p>
+                        <p>d'échange avec des crypto-monnaies ou des </p>
+                        <p>monnaies fiduciaires.</p>
+                        <button>
+                            <div><svg class="svg5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 25">
+                                    <g fill="none" fill-rule="evenodd" transform="translate(1)">
+                                        <circle cx="22.9" cy="21.2" r="3.5" fill="currentColor" fill-rule="nonzero">
+                                        </circle>
+                                        <circle cx="3.5" cy="3.5" r="3.5" fill="currentColor" fill-rule="nonzero">
+                                        </circle>
+                                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path d="M15.6 23H9.3a6 6 0 0 1-5.9-5.9v-5.5"></path>
+                                            <path d="m6 13.4-2.6-2.6-2.6 2.6"></path>
+                                        </g>
+                                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path d="M10.8 1.8h6.3A6 6 0 0 1 23 7.7v5.5"></path>
+                                            <path d="M20.5 11.4 23 14l2.5-2.5"></path>
+                                        </g>
+                                    </g>
+                                </svg>Où Acheter</div>
+                        </button>
+                    </div>
+                    <div class="boxc box">
+                        <svg class="svg3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <path fill="currentColor"
+                                d="M31.2 2c0-.7-.5-1.2-1.1-1.2-6.3-.3-11.8 2.3-16.7 8H4c-.6 0-1 .3-1.2.9l-2 8v.3c0 .7.5 1.3 1.2 1.3h4.5l-.6 1.2-.2.5c0 .3.2.7.4.9l4 4a1.2 1.2 0 0 0 1.5.2l1.1-.6v4.7c0 .6.6 1.2 1.3 1.2h.3l8-2c.6-.2 1-.7 1-1.2v-9.4c5-4.3 8.5-9.6 8-16.9zM3.6 16.7 5 11.2h6.3A50.6 50.6 0 0 0 8 16.6l-.2.3zm17.1 10.4-5.4 1.4v-4.4c2.1-1.2 4-2.4 5.6-3.6l-.1.1zm-9.5-3.7-2.7-2.8C14.3 9.3 21 3.4 28.8 3.3c0 9.2-7 14.8-17.6 20.3zM23 5.7A3.2 3.2 0 1 0 26.3 9c0-1.8-1.5-3.2-3.3-3.3zm0 4a.8.8 0 1 1 .8-.7c0 .4-.4.8-.8.8z">
+                            </path>
+                        </svg>
+                        <h1 class="titre3">Découvrir Beam</h1>
+                        <p>Utilisez BEAM pour des transactions et des</p>
+                        <p>paiements DeFi privés.</p>
+                        <button>
+                            <div> <svg class="svg6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 55">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path stroke="currentColor" stroke-width="4"
+                                            d="M15.8 2H7.9A6 6 0 0 0 2 8v8a6 6 0 0 0 6 6h7.8a6 6 0 0 0 6-6V8a6 6 0 0 0-6-6Zm0 30H7.9A6 6 0 0 0 2 38v8a6 6 0 0 0 6 6h7.8a6 6 0 0 0 6-6v-8a6 6 0 0 0-6-6ZM47.4 2h-8a6 6 0 0 0-5.9 6v8a6 6 0 0 0 6 6h7.9a6 6 0 0 0 5.9-6V8a6 6 0 0 0-6-6Z">
+                                        </path>
+                                        <path fill="currentColor" fill-rule="nonzero"
+                                            d="m42.4 50.3 6.2 4c1.2.7 2.6-.4 2.3-1.7l-1.7-7.4 5.5-5c1-1 .5-2.6-.8-2.7l-7.3-.7-2.8-7a1.5 1.5 0 0 0-2.8 0l-2.8 7-7.2.6c-1.3.1-1.9 1.9-.9 2.8l5.5 5-1.6 7.4c-.3 1.3 1 2.4 2.2 1.7l6.2-4Z">
+                                        </path>
+                                    </g>
+                                </svg>Documentation </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="big3">
+                <div class="frequent">
+                    <div class="frequentes">
+                        <p>Questions</p>fréquentes
+                    </div>
+                    <p class="reponses">Réponses aux questions courantes.</p>
+                </div>
+                <div class="questions">
+                    <ul>
+                        <li class="listes">
+                            <div class="over q">Quand Beam a-t-il été lancé ?<i class="fa-solid fa-chevron-right"> </i>
+                            </div>
+                            <div class="reponse ">Le mainnet de Beam a été lancé le 3 janvier 2019. Consultez l'état
+                                actuel sur Beam Blockchain Explorer.</div>
+                        </li>
+                        <li class="listes">
+                            <div class="over q">Beam est-il open-source ?<i class="fa-solid fa-chevron-right"></i></div>
+                            <div class="reponse ">Oui ! Beam est entièrement open-source et accessible sur GitHub.</div>
+                        </li>
+                        <li class="listes">
+                            <div class="over q">Comment Beam assure-t-il la confidentialité ?<i
+                                    class="fa-solid fa-chevron-right"></i></div>
+                            <div class="reponse ">
+                                <div>Beam utilise les protocoles Lelantus et Mimblewimble pour une confidentialité de
+                                    premier ordre par défaut
+                                    — toutes les</div>
+                                <div>transactions sur le réseau sont entièrement confidentielles.</div>
+                            </div>
+                        </li>
+                        <li class="listes">
+                            <div class="over q">Comment est structurée l'émission de Beam ?<i
+                                    class="fa-solid fa-chevron-right"></i> </div>
+                            <div class="reponse ">
+                                <div>Beam a été lancé de manière équitable, sans préminage ni ICO. Il suit un calendrier
+                                    d'émission déflationniste, commençant à</div>
+                                <div>100 BEAM par bloc et se divisant par deux périodiquement. L'offre totale est
+                                    plafonnée à 262 800 000 BEAM. 20% des</div>
+                                <div>émissions de blocs vont à la Trésorerie Beam pendant les cinq premières années (se
+                                    terminant le 3 janvier 2024).</div>
+                            </div>
+                        </li>
+                        <li class="listes">
+                            <div class="over q">Comment fonctionne la gouvernance de Beam ?<i
+                                    class="fa-solid fa-chevron-right"></i></div>
+                            <div class="reponse ">
+                                <div>Beam est en train de passer à la gouvernance BeamX DAO, utilisant des votes sur la
+                                    chaîne. Pour participer, vous aurez</div>
+                                <div>besoin de jetons BEAMX. En savoir plus <span style="color: aqua;">ici</span>.</div>
+                            </div>
+                        </li>
+                        <li class="listes">
+                            <div class="over q">Existe-t-il des portefeuilles Beam dédiés ?<i
+                                    class="fa-solid fa-chevron-right"></i></div>
+                            <div class="reponse">
+                                <div>Oui, Beam propose des portefeuilles personnalisés pour les ordinateurs de bureau,
+                                    les mobiles et le Web (extension de</div>
+                                <div>navigateur). Téléchargez-les <span style="color: aqua;">ici</span>.</div>
+                            </div>
+                        </li>
+                        <li class="listes">
+                            <div class="over q">Puis-je miner du Beam ?<i class="fa-solid fa-chevron-right"></i></div>
+                            <div class="reponse">
+                                <div>Oui. Beam est un réseau Proof-of-Work utilisant l'algorithme de consensus BeamHash
+                                    III, permettant un minage efficace avec</div>
+                                <div>des GPU. Consultez le guide de minage <span style="color: aqua;">ici</span>.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="big4">
+                <h1 class="Title">Où Acheter BEAM</h1>
+                <div class="acheter">
+                    <div class="pech">
+                        <div class=" q plateforme">Plateformes d'échange</div>
+                        <div class="q echange">Echanges instantanés</div>
+                    </div>
+                    <div class="boutons">
+                        <p><button class="b1">
+                                <p class="p1"><img src="assets/mexc.svg" alt="im"><span class="sp1">MEXC</span> <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                            </button>
+                            <button class="b1">
+                                <p class="p1"><img src="assets/gateio.svg" alt="im"><span class="sp1">Gate.io</span><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                            </button>
+                            <button class="b1">
+                                <p class="p1"><img src="uniswap.svg" alt="im"><span class="sp1">Uniswap</span><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                            </button>
+                            <button class="b1">
+                                <p class="p1"><img src="assets/coinex.svg" alt="im"><span class="sp1">CoinEx</span><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                            </button>
+                        </p>
+                        <p><button class="b1">
+                                <p class="p1"><img src="assets/tradeogre.svg" alt="im"><span
+                                        class="sp1">Tradeogre</span><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                            </button>
+                            <button class="b1">
+                                <p class="p1"><img src="assets/nonkyc.svg" alt="im"><span class="sp1">NonKYC</span><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                            </button>
+                        </p>
+                        <button class="b1">
+                            <p class="p1"><img src="assets/trocador.svg" alt="im"><span class="sp1">Trocador</span><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="avertissement">
+                    <p class="averti"><i class="fa-solid fa-triangle-exclamation"></i><span
+                            style="font-weight: bolder;">AVERTISSEMENT</span> : Les services tiers listés ne sont pas
+                        approuvés par Beam. Faites preuve
+                        de prudence, car les garanties de sécurité et de confidentialité de Beam ne s'appliquent pas.
+                    </p>
+                    <div class="averti touch">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <div>
+                            <p style="margin: 0;">L'adresse du contrat Wrapped Beam (WBEAM) est <a
+                                    href="0xE5AcBB03D73267c03349c76EaD672Ee4d941F499">0xE5AcBB03D73267c03349c76EaD672Ee4d941F499</a>.
+                                WBEAM sert de représentation ERC-20 des pièces Beam et peut être ponté de manière</p>
+                            <p style="margin: 0;">bidirectionnelle entre les blockchains Ethereum et Beam.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iso">
+        <h2 class="grosTitre">Feuille De Route De Développement</h2>
+        <div class="divChevron">
+            <i class="chevron fa-solid fa-chevron-left divChevron1"></i>
+            <section class="bloc1">
+                <div class="atom">
+                    <p class="annee">2019</p>
+                    <div class="titleBox">
+                        <img src="assets/atom.svg" alt="" class="icon1">
+                        <p class="title3">Atome Agile</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> API de paiement et d'échange</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> API de pool minier</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Document de positionnement Lightning
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="boson">
+                    <p class="annee">2019</p>
+                    <div class="titleBox">
+                        <img src="assets/boson.svg" alt="" class="icon1">
+                        <p class="title3">Boson lumineux</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Portefeuilles Android et IOS</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Intégration des plateformes de paiement
+                        </li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Synchronisation rapide des noeuds</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Confirmation de paiement</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Preuve de concept anywhere Beam</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Portefeuille froid</li>
+                    </ul>
+                </div>
+
+                <div class="cathode">
+                    <p class="annee">2019</p>
+                    <div class="titleBox">
+                        <img src="assets/cathode.svg" alt="" class="icon1">
+                        <p class="title3">Cathode Claire</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Swap atomique Beam ↔ BTC, LTC, QTUM</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Changement d'algorithme de PoW</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Preuve de concept Lightning</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Preuve de concept Lelantus-MW</li>
+                    </ul>
+                </div>
+
+                <div class="doppler">
+                    <p class="annee">2020</p>
+                    <div class="titleBox">
+                        <img src="assets/doppler.svg" alt="" class="icon1">
+                        <p class="title3">Doppler double</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Place de marché de swaps atomiques
+                            (portefeuille
+                            de bureau) et API</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Laser Beam</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Testnet Lelantus</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Notification de mise à jour de
+                            portefeuille
+                        </li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Indicateur de valeur fiduciaire du
+                            portefeuille
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="electron">
+                    <p class="annee">2020</p>
+                    <div class="titleBox">
+                        <img src="assets/electron.svg" alt="" class="icon1">
+                        <p class="title3">Electron Eager</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Actifs confidentiels sur le mainnet</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Algorithme de minage PoW Bea,Hashll</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Lelantus MW</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Paiement à sens unique</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Synchronisation du solde avec la même
+                            phrase
+                            secrète</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Noeud mobile</li>
+                    </ul>
+                </div>
+
+                <div class="fermion">
+                    <p class="annee">2021</p>
+                    <div class="titleBox">
+                        <img src="assets/fermion.svg" alt="" class="icon1">
+                        <p class="title3">Fermion Féroce</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Machine virtuelle Beam dans le
+                            portefeuille
+                            et
+                            le Noeud</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Boutique DAPP intégrée au portefeuille
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="gluon">
+                    <p class="annee">2022</p>
+                    <div class="titleBox">
+                        <img src="assets/gluon.svg" alt="" class="icon1">
+                        <p class="title3">Gluon Groovy</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Intégration IPFS</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Magasin décentralisé DApp</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Service de Domaines Anonymes Beam (BANS)
+                        </li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> DAO core DAPP (gouvernance et vote)</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Marché d'échange d'Actifs</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Mises à jour de l'explorateur de
+                            blockchain
+                        </li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> SDK Shader</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Oracles</li>
+                    </ul>
+                </div>
+
+                <div class="groovy">
+                    <p class="annee">2023</p>
+                    <div class="titleBox">
+                        <img src="assets/gluon.svg" alt="" class="icon1">
+                        <p class="title3">Groovy Gluon DeFi</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Lancement de l'AMM DEX</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> DApp de farming de liquidités BeamX</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Beam enveloppé sur Ethereum</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Pont Ethereum (ETH, USDT, WBTC, DAI)
+                        </li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Support pour portefeuilles HW (Ledger
+                            Nano S
+                            et
+                            Plus)</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> DApp Beam Messenger dans Beam Wallet
+                        </li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Transactions à haute fréquence</li>
+                    </ul>
+                </div>
+
+                <div class="groovy2">
+                    <p class="annee">2024</p>
+                    <div class="titleBox">
+                        <img src="assets/gluon.svg" alt="" class="icon1">
+                        <p class="title3">Groovy Gluon Sync</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> "5-anniversary" wallet update</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Seamless background node Sync</li>
+                    </ul>
+                </div>
+
+                <div class="hearty">
+                    <p class="annee">2025</p>
+                    <div class="titleBox">
+                        <img src="assets/hadron.svg" class="icon1">
+                        <p class="title3">Hearty Hadron</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Bridge SDK</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Arbitrum bridge</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Ledger App update</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Desktop wallet Qt16 framework update
+                        </li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Beam Warp (L2) testnet</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> EVM support (Hard fork 8.0)</li>
+                        <li><i class="fa-light fa-circle"></i> Beam Warp (L2) mainnet</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Dao Transition</li>
+                        <li><i class="fa-solid fa-circle-check icon-check"></i> Wallet widgets</li>
+                    </ul>
+                </div>
+            </section>
+            <i class="chevron  fa-solid fa-chevron-right divChevron1"></i>
+        </div>
+
+        <h2 class="grosTitre">Hard Forks</h2>
+        <div class="divChevron">
+            <i class="chevron fa-solid fa-chevron-left divChevron2"></i>
+            <section class="bloc2">
+                <div class="fork-card" id="fork1">
+                    <p class="annee">2019</p>
+                    <div class="titleBox">
+                        <img src="assets\cathode.svg" class="icon1">
+                        <p class="title3">Première Hard-Fork</p>
+                    </div>
+                    <p class="fork-summary">
+                        Mise à jour de BeamHash I à BeamHash II. Baisse de la difficulté car tous les mineurs n'ont pas
+                        mis
+                        à
+                        jour à temps.
+                    </p>
+                    <p class="fork-full">
+                        La première hard-fork de Beam a été réalisée comme annoncé dans la feuille de route.
+                        L'algorithme
+                        PoW a
+                        été mis à jour de BeamHash I à BeamHash II,.......
+                    </p>
+                    <button class="toggle-btn">View More</button>
+                </div>
+
+                <div class="fork-card" id="fork2">
+                    <p class="annee">2020</p>
+                    <div class="titleBox">
+                        <img src="assets\electron.svg" class="icon1">
+                        <p class="title3">Deuxième Hard-Fork</p>
+                    </div>
+                    <p class="fork-summary">
+                        Passage à BeamHash III. Activation des actifs confidentiels et Lelantus-MW.
+                    </p>
+                    <p class="fork-full">
+                        La deuxième hard-fork de Beam a été réalisée comme annoncé dans la feuille de route.
+                        L'algorithme
+                        PoW a
+                        été mis à jour de BeamHash II à BeamHash III, qui est la version...........
+                    </p>
+                    <button class="toggle-btn">View More</button>
+                </div>
+
+                <div class="fork-card" id="fork3">
+                    <p class="annee">2021</p>
+                    <div class="titleBox">
+                        <img src="assets\fermion.svg" class="icon1">
+                        <p class="title3">Troisième Hard-Fork (et portefeuille v6.0)</p>
+                    </div>
+                    <p class="fork-summary">
+                        Lancement de la Machine Virtuelle Beam (BVM) pour les contrats intelligents confidentiels.
+                    </p>
+                    <p class="fork-full">
+                        Cette hard-fork a introduit la Machine Virtuelle Beam (BVM) comme infrastructure pour créer des
+                        Contrats
+                        Intelligents (aussi appelés 'Shaders'), faisant de Beam la première cryptomonnaie axée sur la
+                        confidentialité avec des capacités de contrats intelligents !.............
+                    </p>
+                    <button class="toggle-btn">View More</button>
+                </div>
+
+                <div class="fork-card" id="fork4">
+                    <p class="annee">2022</p>
+                    <div class="titleBox">
+                        <img src="assets\gluon.svg" class="icon1">
+                        <p class="title3">Quatrième Hard-Fork (et portefeuille v7.0)</p>
+                    </div>
+                    <p class="fork-summary">
+                        Introduction des transactions haute fréquence (HFTX) et intégration IPFS.
+                    </p>
+                    <p class="fork-full">
+                        Cette hard-fork a introduit les 'Transactions Haute Fréquence' (HFTX) sur les côtés du nœud et
+                        du
+                        portefeuille, ainsi que l'intégration du stockage IPFS du côté du portefeuille......
+                    </p>
+                    <button class="toggle-btn">View More</button>
+                </div>
+
+                <div class="fork-card" id="fork5">
+                    <p class="annee">2023</p>
+                    <div class="titleBox">
+                        <img src="assets\gluon.svg" class="icon1">
+                        <p class="title3">Cinquième Hard-Fork (et portefeuille v7.1)</p>
+                    </div>
+                    <p class="fork-summary">
+                        Réduction du coût d'émission des actifs confidentiels. Améliorations des contrats intelligents.
+                    </p>
+                    <p class="fork-full">
+                        Comme discuté sur le Forum Beam, cette hard-fork a réduit le coût d'émission des Actifs
+                        Confidentiels de
+                        3000 à seulement 10 BEAM.
+                        La hard-fork a également ajouté des améliorations aux contrats intelligents ..............
+                    </p>
+                    <button class="toggle-btn">View More</button>
+                </div>
+            </section>
+            <i class="chevron  fa-solid fa-chevron-right divChevron2"></i>
+        </div>
+
+
+
+        <h2 class="grosTitre">Ils Parlent De Nous</h2>
+        <div class="divChevron">
+            <i class="chevron fa-solid fa-chevron-left"></i>
+            <div class="carrousel">
+                <div class="blocMarque">
+                    <img src="assets\cryptocopia.svg" class="marque">
+                    <img src="assets\cryptwerk.svg" class="marque">
+                    <img src="assets\blockspot.svg" class="marque">
+                    <img src="assets\bitcoinexchangeguide.svg" class="marque">
+                    <img src="assets\cryptonews.svg" class="marque">
+                    <img src="assets\coindesk.svg" class="marque">
+                    <img src="assets\forbes.svg" class="marque">
+                    <img src="assets\coingecko.svg" class="marque">
+                    <img src="assets\benthamsgaze.svg" class="marque">
+                    <img src="assets\unchainedpodcast.svg" class="marque">
+
+                    <img src="assets\cryptocopia.svg" class="marque">
+                    <img src="assets\cryptwerk.svg" class="marque">
+                    <img src="assets\blockspot.svg" class="marque">
+                    <img src="assets\bitcoinexchangeguide.svg" class="marque">
+                </div>
+            </div>
+            <i class="chevron  fa-solid fa-chevron-right"></i>
+        </div>
+
+        <footer>
+            <section class="footer1">
+                <div class="basLogo">
+                    <img src="assets\logo.svg" alt="" class="icon1">
+                    <span>© 2023 Beam Foundation Limited. Tous droits réservés</span>
+                </div>
+
+                <div class="basBeam">
+                    <span><strong>BEAM</strong></span>
+                    <p>Forum Beam</p>
+                    <p>X profile</p>
+                    <p>Feuille de route</p>
+                    <p>Fourches dures</p>
+                    <p>Lettre d'information</p>
+                    <p>YouTube</p>
+                    <p>Blog Beam</p>
+                    <p>Beampedia</p>
+                </div>
+
+                <div class="basCommunaute">
+                    <span><strong>COMMUNAUTÉ</strong></span>
+                    <p>Telegram</p>
+                    <p>Discord</p>
+                    <p>Reddit</p>
+                    <p>BeamAssets</p>
+                    <p>Groupe QQ</p>
+                    <p>CoinGecko</p>
+                    <p>CoinMarketCap</p>
+                    <p>Support</p>
+                </div>
+
+                <div class="basDev">
+                    <span><strong>DÉVELOPPEURS</strong></span>
+                    <p>Documentation</p>
+                    <p>Explorateur De Blockchain</p>
+                    <p>Code Source</p>
+                    <p>Support</p>
+                </div>
+
+                <div class="BasMineur">
+                    <span><strong>MINEURS</strong></span>
+                    <p>Commencer À Miner</p>
+                    <p>Support</p>
+                </div>
+            </section>
+
+            <div class="trait"></div>
+
+            <section class="footer2">
+                <div class="textBas">
+                    <div class="bas2">
+                        <p>Polique de confidentialité</p>
+                    </div>
+                    <div class="bas2">
+                        <p>Contactez-Nous</p>
+                    </div>
+                    <div class="bas2">
+                        <p>Kit média (ZIP)</p>
+                    </div>
+                </div>
+
+                <div class="iconBar">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-telegram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fab fa-reddit"></i>
+                    <i class="fab fa-discord"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fas fa-network-wired"></i>
+                    <i class="fas fa-book"></i>
+                    <i class="fas fa-coins"></i>
+                    <i class="fab fa-medium"></i>
+                    <i class="fas fa-comment-dots"></i>
+                    <i class="fas fa-headset"></i>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+
+
+
+
+    <script>
+        var question = document.querySelectorAll(".q");
+        question.forEach(function (laQuestion) {
+            laQuestion.addEventListener("click",
+                function () {
+                    var rep = laQuestion.nextElementSibling;
+                    document.querySelectorAll(".reponse").forEach(function (autreReponse) {
+                        if (autreReponse !== rep) {
+                            autreReponse.classList.remove("active");
+                        }
+
+                    });
+
+                    rep.classList.toggle("active");
+                });
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
